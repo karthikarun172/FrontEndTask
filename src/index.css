@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dashed-circular .CircularProgressbar-path {
+  stroke-dasharray: 14, 12 !important;
+  stroke-linecap: round !important;
+}
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.6); /* pink-500 */
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(236, 72, 153, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(236, 72, 153, 0);
+  }
+}
+
+.animate-border-pulse {
+  animation: pulse-border 1s infinite;
+  border-color: #ec4899; /* pink-500 */
+}
+.animated-gradient-border {
+  position: relative;
+  border-radius: 1rem; /* match Tailwind's rounded-xl */
+  padding: 2px; /* controls border thickness */
+  background: linear-gradient(270deg, #ec4899, #f59e0b, #3b82f6, #ec4899);
+  background-size: 600% 600%;
+  animation: borderFlow 6s ease infinite;
+}
+
+@keyframes borderFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient-border-inner {
+  border-radius: 0.9rem;
+  background-color: #f9fafb;
+}
