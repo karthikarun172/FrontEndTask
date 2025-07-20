@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="relative">
       <Sidebar />
-      <div className="pl-[220px]">
+      <div className="pl-[240px]">
         <Dashboard />
       </div>
     </div>

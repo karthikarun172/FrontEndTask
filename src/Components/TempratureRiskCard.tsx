@@ -15,7 +15,7 @@ function TempratureRiskCard() {
           <HelpCircle className="w-4 h-4 text-yellow-300" />
         </div>
         <CircularTimeChart
-          value={40}
+          value={20}
           max={100}
           color="#f59e42"
           text="1:30 hrs"

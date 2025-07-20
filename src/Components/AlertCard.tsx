@@ -19,7 +19,7 @@ function AlertCard({ heading, detail, type }: CardDetailsProps) {
       <div className="flex items-center gap-4">
         {type === "alert" ? (
           <div className="bg-pink-500 rounded-lg p-2 flex items-center justify-center animate-border-pulse">
-            <BookAlert className="text-white w-6 h-6 animate-border-pulse" />
+            <BookAlert className="text-white w-6 h-6 zoom-animation animate-border-pulse" />
           </div>
         ) : (
           <div className="bg-pink-200 rounded-lg p-2 flex items-center justify-center">

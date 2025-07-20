@@ -6,7 +6,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { Heart } from "lucide-react";
+import { Heart, LightbulbIcon } from "lucide-react";
 
 const heartData = [
   { time: "06:00", value: 40 },
@@ -86,8 +86,9 @@ export function HeartRateChart() {
         </ResponsiveContainer>
       </div>
 
-      <div className="text-[12px] text-gray-600 border bg-white  rounded-md px-3 py-1 text-center w-full mt-2">
-        🕒 Rest 2+ hours and avoid intense tasks.
+      <div className="text-[12px] text-gray-600 border bg-white flex  items-center rounded-md px-3 py-1 text-center w-full mt-2">
+        <LightbulbIcon className="w-3 h-3" /> Rest 2+ hours and avoid intense
+        tasks.
       </div>
     </div>
   );

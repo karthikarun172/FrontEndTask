@@ -47,3 +47,17 @@
   border-radius: 0.9rem;
   background-color: #f9fafb;
 }
+
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.zoom-animation {
+  animation: zoomInOut 1.2s ease-in-out infinite;
+}
