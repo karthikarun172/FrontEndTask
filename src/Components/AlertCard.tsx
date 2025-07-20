@@ -1,14 +1,15 @@
 import { Clock as AlertCircle, BookAlert } from "lucide-react";
 
 type CardDetailsProps = {
-  heading: String;
-  detail: String;
-  type: String;
+  heading?: string;
+  detail?: string;
+  type?: string;
 };
 
 function AlertCard({ heading, detail, type }: CardDetailsProps) {
   return (
     <div
+      data-testid="alert-card"
       className={`w-full flex items-center justify-between rounded-xl p-4 bg-gray-50 mx-auto mt-2 border ${
         type === "alert"
           ? "animate-border-pulse border-pink-500"
