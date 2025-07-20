@@ -1,4 +1,3 @@
-import React from "react";
 import IndicatorCard from "./Common/IndicatorCard";
 import { Heart } from "lucide-react";
 import { HeartRateChart } from "./Charts/HeartRateChart";

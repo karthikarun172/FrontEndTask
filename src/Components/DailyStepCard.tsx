@@ -1,4 +1,3 @@
-import React from "react";
 import IndicatorCard from "./Common/IndicatorCard";
 import { Footprints } from "lucide-react";
 import { CircularTimeChart } from "./Charts/CircularTimeChart";

@@ -1,4 +1,3 @@
-import React from "react";
 import IndicatorCard from "./Common/IndicatorCard";
 import { ChartBar } from "lucide-react";
 import { WeeklyStepsChart } from "./Charts/WeeklyStepChart";
