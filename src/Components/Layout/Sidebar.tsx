@@ -14,12 +14,11 @@ import {
 const Sidebar = () => {
   return (
     <div className="w-auto h-screen bg-gray-100 border-r rounded-xl border-gray-200 flex flex-col justify-between fixed left-5 top-5">
-      {/* Top Section: Logo and Device Info */}
       <div>
         <div className="p-4">
           <h1 className="text-xl font-bold text-[#fd3c6a]">SOL✕</h1>
-          <div className="mt-4 p-3 bg-white rounded-xl border border-gray-200 flex flex-col  shadow-sm">
-            <div className="flex items-center ">
+          <div className="mt-4 p-2 bg-gray-300  w-[220px]  rounded-xl border border-gray-200 flex flex-col  shadow-sm">
+            <div className="flex items-center  ">
               <Watch className="w-5 h-5 text-gray-700" />
               <div>
                 <p className="text-xs font-semibold text-gray-700">
@@ -29,11 +28,11 @@ const Sidebar = () => {
                   02/04/2025, 13:12:45
                 </p>
               </div>
-            </div>
-            <div className="ml-auto mt-1">
-              <div className="text-[11px] bg-green-500 text-white px-2 py-0.5 rounded font-bold">
-                <BatteryMedium />
-                85%
+              <div className="ml-auto mt-1">
+                <div className="text-xs flex flex-col items-center bg-green-500 text-white px-2 py-0.5 rounded font-bold">
+                  <BatteryMedium className="w-5 h-5" />
+                  <p className="text-xs">85%</p>
+                </div>
               </div>
             </div>
           </div>

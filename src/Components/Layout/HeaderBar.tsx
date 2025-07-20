@@ -38,11 +38,8 @@ const HeaderBar = () => {
       </div>
 
       {/* Right: Notification */}
-      <div className="relative rounded-full bg-gray-100 p-2">
+      <div className="relative  p-2">
         <Bell className="w-4 h-4 text-gray-700" />
-        <span className="absolute -top-1 -right-1 text-[10px] bg-pink-500 text-white font-bold rounded-full px-1.5">
-          5
-        </span>
       </div>
     </div>
   );
