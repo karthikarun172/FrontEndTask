@@ -6,9 +6,7 @@ function App() {
   return (
     <div className="relative">
       <Sidebar />
-      <div className="pl-[260px]">
-        {" "}
-        {/* 220px width + 40px left spacing (left-5 = 20px) + padding */}
+      <div className="pl-[220px]">
         <Dashboard />
       </div>
     </div>
